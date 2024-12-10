@@ -108,6 +108,11 @@
   #gradio pre {
     background-color: transparent;
   }
+
+  /* h2 {
+    text-align: left;
+    font-weight: bold;
+  } */
 </style>
 
 <body>
@@ -130,38 +135,76 @@
             <div class="is-size-5 publication-authors">
             </div>
             <br>
-            <hr>
+            <!-- <hr> -->
             <br>
 
+            
             <section>
+              <h2 class="title"> InternVideo </h2>
               <ul class="post-list">
                 <li>
-                  <span class="post-meta">2022/12/06</span>
-                  <h3>
-                    <a class="post-link" href="blog/2022-12-06-InternVideo-1.0">
+                  <!-- <br>
+                  <span class="post-meta">InternVideo </span>
+                  
+                  <br> -->
+      
+                  2022/12/06<br> <a class="post-link" href="blog/2022-12-06-InternVideo-1.0">
                       InternVideo: General Video Foundation Models via Generative and Discriminative Learning
                     </a>
-                  </h3>
-
-                  <span class="post-meta">2023/07/13</span>
-                  <h3>
-                    <a class="post-link" href="blog/2023-07-13-InternVid">
+                  <br>InternVideo efficiently explores masked video modeling and video-language contrastive learning as the pretraining objectives, and selectively coordinates video representations of these two complementary frameworks in a learnable manner to boost various video applications, obtaining <b>91.1%</b> and <b>77.2%</b> top-1 accuracy on the challenging Kinetics-400 and Sth-V2 benchmarks, respectively.
+              
+                  <br>
+                  <!-- <span class="post-meta"></span> -->
+         
+                  2023/07/13<br> <a class="post-link" href="blog/2023-07-13-InternVid">
                       InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation
-                    </a>
-                  </h3>
+                    </a> <br>
 
-                  <span class="post-meta">2024/03/22</span>
-                  <h3>
-                    <a class="post-link" href="blog/2024-03-22-InternVideo-2.0">
+                    A large-scale video-centric multimodal dataset that enables learning powerful and transferable video-text representations for multimodal understanding and generation. The InternVid dataset contains over <b>7 million videos lasting nearly 760K</b> hours, yielding <b>234M video clips</b> accompanied by detailed descriptions of total 4.1B words.
+                    <br>
+                    2024/03/22<br> <a class="post-link" href="blog/2024-03-22-InternVideo-2.0">
                      InternVideo2: Scaling Foundation Models for Multimodal Video Understanding
                     </a>
-                  </h3>
+                    <br>
+                    A new family of video foundation models (ViFM) that achieve the state-of-the-art results in video recognition, video-text tasks, and video-centric dialogue (<b>over 60 video and audio tasks</b>). Our core design is a progressive training approach that unifies the masked video modeling, crossmodal contrastive learning, and next token prediction, <b>scaling up the video encoder size to 6B parameters</b>.
+                    <br>
 
                 </li>
               </ul>
             </section>
 
+            <section>
+              <h2 class="title"> VideoChat </h2>
+              <ul class="post-list">
+                <li>
+                  <!-- <br>
+                  <span class="post-meta">InternVideo </span>
+                  
+                  <br> -->
+      
+                  2023/03/10<br> <a class="post-link" href="blog/xx">
+                    VideoChat: Chat-centric Video Understanding
+                    </a>
+                  <br><b>First attempt</b> of developing an end-to-end chat-centric video understanding system, coined as <b>VideoChat</b>. It integrates video foundation models and large language models via a learnable neural interface, excelling in spatiotemporal reasoning, event localization, and causal relationship inference.
+              
+                  <br>
+                  <!-- <span class="post-meta"></span> -->
+         
+                  2023/11/28<br> <a class="post-link" href="blog/xx">
+                    MVBench: A Comprehensive Multi-modal Video Understanding Benchmark
+                    </a> <br>
+                    A comprehensive Multi-modal Video understanding Benchmark namely MVBench which covers 20 challenging video tasks that <b>cannot be effectively solved with a single frame</b>. Moreover we further develop a robust video MLLM baseline i.e. <b>VideoChat2</b> by progressive multi-modal training with diverse instruction-tuning data. 
+                    <br>
+                    2024/10/25<br> <a class="post-link" href="blog/xx">
+                    TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning
+                    </a>
+                    <br>
+                    A collection of new designs to adapt the existing short-form video MLLMs for long video understanding, including a simple yet efficient framework to process long video sequence, a high-quality video dataset for grounded tuning of MLLMs, and a carefully-designed instruction tuning task to explicitly incorporate the grounding supervision in the traditional QA format. Our VideoChat-T exhibits <b>robust zero-shot temporal grounding capabilities</b>, significantly outperforming the existing state-of-the-art MLLMs.
+                    <br>
 
+                </li>
+              </ul>
+            </section>
             <section class="section" id="BibTeX" style="background-color:#ffffffff">
               <div class="container is-max-desktop content">
                 <h2 class="title">Citation</h2>
