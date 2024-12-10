@@ -6,7 +6,7 @@
   <meta name="description" content="Dscribe the InternVL">
   <meta name="keywords" content="multimodal chatbot">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InternVL</title>
+  <title>InternVideo</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
@@ -101,6 +101,10 @@
     margin-bottom: 10px;
   }
 
+  .internvideo-title {
+    color: #00008B; 
+  }
+
   #gradio pre {
     background-color: transparent;
   }
@@ -114,296 +118,78 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks</h1>
-            <h5 class="subtitle is-5 publication-awards">CVPR 2024 (Oral)</h5>
+            <h1 class="title is-1 publication-title">
+              <span class="internvideo-title">InternVideo</span>: Video Foundation Models for Multimodal Understanding
+            </h1>
+            <h5 class="subtitle is-5 publication-awards"></h5>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=j1rq_lYAAAAJ" style="color:#f68946;font-weight:normal;">Zhe Chen</a>,
-                <a href="https://scholar.google.com.hk/citations?user=1euA66EAAAAJ&hl=zh-CN" style="color:#f68946;font-weight:normal;">Jiannan Wu</a>,
-                <a href="https://whai362.github.io/" style="color:#f68946;font-weight:normal;">Wenhai Wang</a>,
-                <a href="https://www.weijiesu.com/" style="color:#f68946;font-weight:normal;">Weijie Su</a>,
-                <a href="https://scholar.google.com/citations?user=lRj3moAAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Guo Chen</a>,
-                <a href="https://scholar.google.com/citations?user=2ZZz69AAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Sen Xing</a>,
-                <a href="https://github.com/zmyzxb" style="color:#f68946;font-weight:normal;">Muyan Zhong</a>,
-                <a href="https://scholar.google.com/citations?hl=en&user=LYR7l98AAAAJ&view_op=list_works&sortby=pubdate" style="color:#f68946;font-weight:normal;">Qinglong Zhang</a>,<br>
-                <a href="https://scholar.google.com/citations?user=02RXI00AAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Xizhou Zhu</a>,
-                <a href="https://scholar.google.com.tw/citations?user=zdgKJXIAAAAJ&hl=zh-CN" style="color:#f68946;font-weight:normal;">Lewei Lu</a>,
-                <a href="http://staff.ustc.edu.cn/~binli/" style="color:#f68946;font-weight:normal;">Bin Li</a>,
-                <a href="http://luoping.me/" style="color:#f68946;font-weight:normal;">Ping Luo</a>,
-                <a href="https://scholar.google.com/citations?user=mgqhQGkAAAAJ&hl=en" style="color:#f68946;font-weight:normal;">Tong Lu</a>,
-                <a href="https://scholar.google.com.tw/citations?user=gFtI-8QAAAAJ&hl=zh-CN" style="color:#f68946;font-weight:normal;">Yu Qiao</a>,
-                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=j1rq_lYAAAAJ" style="color:#f68946;font-weight:normal;">Jifeng Dai</a>
+                <span class="internvideo-title">InternVideo</span> Team <br>
+               OpenGVLab, Shanghai AI Laboratory
               </span>
-
-
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> OpenGVLab, Shanghai AI Laboratory</b></span>
-              <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Nanjing University</span>
-              <span class="author-block"><b style="color:#F2A900; font-weight:normal">&#x25B6 </b> The University of Hong Kong</span>
-              <span class="author-block"><b style="color:#3ec40f; font-weight:normal">&#x25B6 </b> The Chinese University of Hong Kong</span>
-              <span class="author-block"><b style="color:#ff481c; font-weight:normal">&#x25B6 </b> Tsinghua University</span> <br>
-              <span class="author-block"><b style="color:#bb52ff; font-weight:normal">&#x25B6 </b> University of Science and Technology of China</span>
-              <span class="author-block"><b style="color:#00f2c2; font-weight:normal">&#x25B6 </b> SenseTime Research</span>
             </div>
+            <br>
+            <hr>
+            <br>
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2312.14238" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="color:#ffffff">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span style="color:#ffffff">arXiv (InternVL-1.0)</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2404.16821" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="color:#ffffff">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span style="color:#ffffff">arXiv (InternVL-1.5)</span>
-                  </a>
-                </span>
-                <span class="link-block" >
-                  <a href="https://github.com/OpenGVLab/InternVL" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="color:#ffffff">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span style="color:#ffffff">Code</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://internvl.opengvlab.com/" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="color:#ffffff">
-                      <i class="far fa-images"></i>
-                    </span>
-                    <span style="color:#ffffff">Demo</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://huggingface.co/collections/OpenGVLab/internvl-20-667d3961ab5eb12c7ed1463e" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="color:#ffffff">
-                      <i class="fas fa-download"></i>
-                    </span>
-                    <span style="color:#ffffff">Model</span>
-                  </a>
-                </span>
+            <section>
+              <ul class="post-list">
+                <li>
+                  <span class="post-meta">2022/12/06</span>
+                  <h3>
+                    <a class="post-link" href="blog/2022-12-06-InternVideo-1.0">
+                      InternVideo: General Video Foundation Models via Generative and Discriminative Learning
+                    </a>
+                  </h3>
 
-                <span class="link-block">
-                  <a href="./files/internvl_slides_chinese.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="color:#ffffff">
-                      <i class="fas fa-file-powerpoint"></i>
-                    </span>
-                    <span style="color:#ffffff">Slides (Chinese)</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="/blog" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon" style="color:#ffffff">
-                      <i class="fas fa-book"></i>
-                    </span>
-                    <span style="color:#ffffff">Blog</span>
-                  </a>
-                </span>
+                  <span class="post-meta">2023/07/13</span>
+                  <h3>
+                    <a class="post-link" href="blog/2023-07-13-InternVid">
+                      InternVid: A Large-scale Video-Text Dataset for Multimodal Understanding and Generation
+                    </a>
+                  </h3>
+
+                  <span class="post-meta">2024/03/22</span>
+                  <h3>
+                    <a class="post-link" href="blog/2024-03-22-InternVideo-2.0">
+                     InternVideo2: Scaling Foundation Models for Multimodal Video Understanding
+                    </a>
+                  </h3>
+
+                </li>
+              </ul>
+            </section>
+
+
+            <section class="section" id="BibTeX" style="background-color:#ffffffff">
+              <div class="container is-max-desktop content">
+                <h2 class="title">Citation</h2>
+                <pre class="left-aligned smaller-font"><code>
+@article{wang2024internvideo2,
+title={Internvideo2: Scaling video foundation models for multimodal video understanding},
+author={Wang, Yi and Li, Kunchang and Li, Xinhao and Yu, Jiashuo and He, Yinan and Wang, Chenting and Chen, Guo and Pei, Baoqi and Zheng, Rongkun and Xu, Jilan and Wang, Zun and others},
+journal={arXiv preprint arXiv:2403.15377},
+year={2024}
+}
+            
+@article{wang2022internvideo,
+title={InternVideo: General Video Foundation Models via Generative and Discriminative Learning},
+author={Wang, Yi and Li, Kunchang and Li, Yizhuo and He, Yinan and Huang, Bingkun and Zhao, Zhiyu and Zhang, Hongjie and Xu, Jilan and Liu, Yi and Wang, Zun and Xing, Sen and Chen, Guo and Pan, Junting and Yu, Jiashuo and Wang, Yali and Wang, Limin and Qiao, Yu},
+journal={arXiv preprint arXiv:2212.03191},
+year={2022}
+}
+                </code></pre>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <h4 class="subtitle has-text-centered">
-          🚀 <span style="color: #ff3860">[NEW!]</span> We release the <a href="https://huggingface.co/collections/OpenGVLab/internvl-20-667d3961ab5eb12c7ed1463e">InternVL2 series</a>. InternVL2-Pro achieved a 62.0% accuracy on the MMMU benchmark, matching the performance of leading closed-source commercial models like GPT-4o. The free API of this model can be applied by filling (<a href="https://docs.google.com/forms/d/e/1FAIpQLSfMCzhPr1OOEKau_6jwTU0EiZMSFckDo-HMlc_hUudhF_97rw/viewform?usp=sf_link">application form</a>) / (<a href="https://wj.qq.com/s2/14910502/25a4/">申请表</a>). Other models are available at <a href="https://huggingface.co/collections/OpenGVLab/internvl-20-667d3961ab5eb12c7ed1463e">HF link</a>.
-          <br><br>
-          Mini-InternVL has been deployed on the <a href="https://internvl.opengvlab.com/">demo</a>. Select Mini-InternVL-Chat-2B-V1-5 <br>in the demo to experience lightning-fast performance.
-          <br><br>
-          InternVL-Chat-V1.5 has been released at <a href="https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5">HF link</a>, approaching the performance of GPT-4V <br> and Gemini Pro on various benchmarks like MMMU, DocVQA, ChartQA, MathVista, etc.
-          <br><br>
-        </h4>
-      </div>
-    </div>
-  </section>
-
-  <section class="section"  style="background-color:#ffffffff">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-               The exponential growth of large language models (LLMs) has opened up numerous possibilities for multimodal AGI systems. However, the progress in vision and vision-language foundation models, which are also critical elements of multi-modal AGI, has not kept pace with LLMs. In this work, we design a large-scale vision-language foundation model (InternVL), which scales up the vision foundation model to 6 billion parameters and progressively aligns it with the LLM, using web-scale image-text data from various sources. This model can be broadly applied to and achieve state-of-the-art performance on 32 generic visual-linguistic benchmarks including visual perception tasks such as image-level or pixel-level recognition, vision-language tasks such as zero-shot image/video classification, zero-shot image/video-text retrieval, and link with LLMs to create multi-modal dialogue systems. It has powerful visual capabilities and can be a good alternative to the ViT-22B. We hope that our research could contribute to the development of multi-modal large models.
-           </p>
-
-          <img id="pipeline" width="100%" src="images/pipeline.png">
-            <br>
-            <br>
-          <img id="sota" width="100%" src="images/sota.png">
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-<section class="section"  style="background-color:#efeff081">
-  <!-- Results. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3">Scaling up Vision Foundation Models</h2>
-
-    </div>
-  </div>
-  <!-- </div> -->
-  <!--/ Results. -->
-<div class="container is-max-desktop">
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <div class="content has-text-justified">
-        <p>
-          We implement the vision encoder of InternVL (i.e., <b>InternViT-6B</b>) with vanilla vision transformer (ViT). To match the scale of LLMs, we scale up the vision encoder to 6 billion parameters, resulting in the InternViT-6B model.
-          To obtain a good trade-off between accuracy, speed, and stability, we conduct a hyperparameter search for InternViT-6B.
-          We vary the <b>model depth within {32, 48, 64, 80}</b>, the <b>head dimension within {64, 128}</b>, and the <b>MLP ratio within {4, 8}</b>. The model width and the head number are calculated based on the given model scale and other hyperparameters.
-
-          <br>
-          <br>
-
-          We employ contrastive learning on a 100M subset of the LAION-en dataset to measure the accuracy, speed, and stability of InternViT-6B variants with different configurations.
-          We report the following findings:
-
-          <ul type="1">
-            <li><b>(1) Speed</b>. <span style="font-size: 95%;">For different model settings, when computation is not saturated, the models with smaller depths exhibit faster speed per image.
-          However, as the GPU computation is fully utilized, the speed difference becomes negligible;  </span></li>
-            <li><b>(2) Accuracy</b>. <span style="font-size: 95%;">With the same number of parameters, the depth, head dimension, and MLP ratio have little impact on the performance.
-          Based on these findings, we identified the most stable configuration for our final model, as shown in the following table.   </span></li>
-            <br>
-          </ul>
-        </p>
-      </div>
-      <centering>
-        <div style="text-align: center;">
-          <img id="vit6b" width="50%" src="images/vit6b_setting.png">
-        </div>
-      </centering>
-    </div>
-  </div>
-</div>
-
-</section>
-
-
-<section class="section" >
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3">Aligning for Generic Visual-Linguistic Tasks</h2>
-    </div>
-  </div>
-  <div class="container is-max-desktop">
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <div class="content has-text-justified">
-        <p>
-          As shown in Figure 3, the training of InternVL consists of three progressive stages, including vision-language contrastive training, vision-language generative training, and
-supervised fine-tuning. These stages effectively leverage public data from diverse soursota.pngces, ranging from noisy imagetext pairs on the web to high-quality caption, VQA, and multi-modal dialogue datasets.
-          <br>
-          <br>
-
-          <ul type="1">
-            <li><b>Vision-Language Contrastive Training</b>. <span style="font-size: 95%;">
-              In the first stage, we conduct contrastive learning to align InternViT-6B with a multilingual LLaMA-7B on web-scale, noisy imagetext pairs. The data are all publicly available and comprise multilingual content, including LAION-en, LAION-multi, LAION-COCO, COYO, Wukong, etc.
-              We use the combination of these datasets and filter out some extremely low-quality data to train our model.
-              As summarized in Table 2, the original dataset contains 6.03 billion image-text pairs, and 4.98 billion remains after cleaning.</span></li>
-            <li><b>Vision-Language Generative Training</b>. <span style="font-size: 95%;"> In the second stage of training, we connect InternViT-6B with QLLaMA
-and adopt a generative training strategy. Specifically, QLLaMA inherits the weights of LLaMA-7B in the first stage.
-We keep both InternViT-6B and QLLaMA frozen and only
-train the newly added learnable queries and cross-attention
-layers with filtered, high-quality data. Table 2 summarizes
-the datasets for the second stage. It can be seen that we further filtered out data with low-quality captions, reducing it
-from 4.98 billion in the first stage to 1.03 billion. </span></li>
-            <li><b>Supervised Fine-tuning</b>. <span style="font-size: 95%;">To demonstrate the benefits of InternVL in creating multi-modal dialogue systems, we
-connect it with an off-the-shelf LLM decoder (e.g., Vicuna or InternLM) through an MLP layer, and conduct supervised fine-tuning (SFT).
-              As detailed in Table 3, we collect a wide range of high-quality instruction data, totaling approximately 4 million samples. </span></li>
-          </ul>
-        <br>
-        </p>
-      </div>
-      <centering>
-        <div style="text-align: center;">
-          <img id="training" width="100%" src="images/training.png">
-          <br>
-          <br>
-          <img id="data" width="100%" src="images/data.png">
-
-        </div>
-      </centering>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="section"   style="background-color:#efeff081">
-  <!-- Results. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3">Performance</h2>
-    </div>
-  </div>
-
-<div class="container is-max-desktop">
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4">Visual Perception Benchmarks</h2>
-      <img id="perception" width="100%" src="images/perception.png">
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-4">Vision-Language Benchmarks</h2>
-      <img id="zero-shot-cls" width="100%" src="images/zero-shot-cls.png">
-      <img id="zero-shot-retrieval" width="100%" src="images/zero-shot-retrieval.png">
-      <img id="multimodal" width="100%" src="images/multimodal.png">
-
-
-    </div>
-  </div>
-</div>
-</section>
-
-  <section class="section" id="BibTeX"  style="background-color:#ffffffff">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Citation</h2>
-      <pre><code>
-  @article{chen2023internvl,
-    title={InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks},
-    author={Chen, Zhe and Wu, Jiannan and Wang, Wenhai and Su, Weijie and Chen, Guo and Xing, Sen and Zhong, Muyan and Zhang, Qinglong and Zhu, Xizhou and Lu, Lewei and Li, Bin and Luo, Ping and Lu, Tong and Qiao, Yu and Dai, Jifeng},
-    journal={arXiv preprint arXiv:2312.14238},
-    year={2023}
-  }
-
-  @article{chen2024far,
-    title={How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites},
-    author={Chen, Zhe and Wang, Weiyun and Tian, Hao and Ye, Shenglong and Gao, Zhangwei and Cui, Erfei and Tong, Wenwen and Hu, Kongzhi and Luo, Jiapeng and Ma, Zheng and others},
-    journal={arXiv preprint arXiv:2404.16821},
-    year={2024}
-  }
-  </code></pre>
-    </div>
-  </section>
-
+            </section>
+            <style>
+              .left-aligned {
+                text-align: left; /* Aligns text to the left */
+              }
+              .smaller-font {
+                font-size: 0.8em; /* Reduces font size by 20% */
+              }
+            </style>
 
   <section class="section" id="Acknowledgement">
     <div class="container is-max-desktop content">
@@ -415,157 +201,6 @@ connect it with an off-the-shelf LLM decoder (e.g., Vicuna or InternLM) through 
       </p>
     </div>
   </section>
-
-  <script>
-    // Handle message showing
-    function createChatRow(sender, text, imageSrc) {
-      var article = document.createElement("article");
-      article.className = "media"
-
-      var figure = document.createElement("figure");
-      figure.className = "media-left";
-
-      var span = document.createElement("span");
-      span.className = "icon is-large";
-
-      var icon = document.createElement("i");
-      icon.className = "fas fas fa-2x" + (sender === "User" ? " fa-user " : sender === "InternVL" ? " fa-robot" : "");
-
-      var media = document.createElement("div");
-      media.className = "media-content";
-
-      var content = document.createElement("div");
-      content.className = "content";
-
-      var para = document.createElement("p");
-
-      // wrap text in pre tag to preserve whitespace and line breaks
-      var pre_text = document.createElement("pre");
-      pre_text.style = "background-color: white; font-size: 18px; font-family: Arial; padding: 0; margin: 0; white-space: pre-wrap; word-wrap: break-word;";
-      var paraText = document.createTextNode(text);
-      pre_text.appendChild(paraText);
-
-      var strong = document.createElement("strong");
-      strong.innerHTML = sender;
-      var br = document.createElement("br");
-
-      para.appendChild(strong);
-      para.appendChild(br);
-      para.appendChild(pre_text);
-
-      // Add image if imageSrc is provided
-      if (imageSrc) {
-        var img = document.createElement("img");
-        img.src = imageSrc;
-        img.style = "max-width: 100%; max-height: 300px;"; // Adjust the style as needed
-        para.appendChild(img);
-      }
-
-      content.appendChild(para);
-      media.appendChild(content);
-      span.appendChild(icon);
-      figure.appendChild(span);
-      if (sender !== "Description") {
-        article.appendChild(figure);
-      };
-      article.appendChild(media);
-      return article;
-    }
-
-    function addMessageToChatHistory(sender, message, imageSrc) {
-      const chatHistory = document.querySelector('.chat-history');
-      const chatRow = createChatRow(sender, message, imageSrc);
-      chatHistory.appendChild(chatRow);
-      chatHistory.scrollTop = chatHistory.scrollHeight;
-    }
-
-    function clearChatHistory() {
-      const chatHistory = document.querySelector('.chat-history');
-      chatHistory.innerHTML = "";
-    }
-
-    // 
-    const conversations = [
-      {
-        "description": "OCR",
-        "turns": [
-          // ["Description", "Please read the description and answer the question."],
-          ["User", "", "/static/images/case_1.png"],
-          ["User", "Tell me the information about the image​"],
-          ["InternVL 1.5",
-          "The image shows a signboard with Chinese text, indicating a business establishment. The signboard reads:\n" +
-          "\"河大西门第一家\" which translates to \"The first shop at the west gate of the river.\"\n" +
-          "\"正宗 老字号 五香味\" which means \"Genuine, old brand, five-spice flavor.\"\n" +
-          "\"曹记焖烤鸡腿\" which translates to \"Cao's roasted and baked chicken legs.\"\n" +
-          "\"营业时间 16:30-22:30\" indicating the business hours from 4:30 PM to 10:30 PM.\n" +
-          "\"7点之后 在门口 路灯下出夜市地摊\" which suggests that after 7 PM, the shop operates in the doorway under the streetlights as a night market stall.\n" +
-          "The signboard also includes a logo that appears to be a stylized rooster, which might be the brand or shop's emblem. The overall style of the signboard is quite traditional and straightforward, commonly seen in Chinese street markets or small businesses."
-          ]
-        ]
-      },
-      {
-        "description": "OCR+understand",
-        "turns": [
-          ["User", "", "/static/images/case_2.jpg"],
-          ["User", "What movement is in the picture? What jersey size player is attacking?​"],
-          ["InternVL 1.5", "The image shows a basketball game in progress. A player wearing a black jersey with the number 1 is in the act of shooting the basketball, while a player in a red jersey with the number 9 is attempting to block the shot. The player in the black jersey is executing a jump shot, and the player in the red jersey is trying to contest the shot by reaching up with his right arm. The movement captured is the dynamic action of a defensive player trying to block the shot while the offensive player attempts to score.​"]
-        ]
-      },
-      {
-        "description": "duck",
-        "turns": [
-          ["User", "", "/static/images/case_3.png"],
-          ["User", "Tell me a person who had made a similar pose to the cute duck."],
-          ["InternVL 1.5", "The pose of the cute duck is reminiscent of a karate stance, which is often associated with martial artists. One famous person who made a similar pose is Bruce Lee, a martial artist and actor known for his contributions to martial arts and film.​"]
-        ]
-      },
-      {
-        "description": "phy",
-        "turns": [
-          ["User", "", "/static/images/case_4.PNG"],
-          ["User", ": If the pH outside the cell decreases, would you expect the amount of amino acids transported into the cell to increase or decrease?"],
-          ["InternVL 1.5", "Based on the image, if the pH outside the cell decreases, we would expect the amount of amino acids transported into the cell to increase. This is because the diagram shows a gradient of amino acids moving from an area of lower concentration (outside the cell) to an area of higher concentration (inside the cell), which is a typical representation of active transport. Active transport is a process that moves substances against their concentration gradient, often using energy, and it is typically more efficient at higher concentrations of the substance being transported. Therefore, a decrease in pH outside the cell would likely increase the concentration gradient, leading to an increase in the transport of amino acids into the cell.​"]
-        ]
-      },
-    ];
-
-    // The current image index
-    let currentIndex = 0;
-
-    // The function to update the displayed chat history
-    function update_dialog_demo() {
-      // Clear the chat history
-      clearChatHistory();
-
-      for (let i = 0; i < conversations[currentIndex].turns.length; i++) {
-        if (conversations[currentIndex].turns[i].length == 2) {
-          addMessageToChatHistory(conversations[currentIndex].turns[i][0], conversations[currentIndex].turns[i][1]);
-        }
-        else {
-          addMessageToChatHistory(conversations[currentIndex].turns[i][0], conversations[currentIndex].turns[i][1], conversations[currentIndex].turns[i][2]);
-        }
-      }
-
-      // scroll to the top of the chat history
-      document.querySelector('.chat-history').scrollTop = 0;
-    }
-
-    // Initialize the displayed image
-    update_dialog_demo();
-
-    // Event listeners for the buttons
-    document.getElementById('prev-question').addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + conversations.length) % conversations.length;
-      update_dialog_demo();
-    });
-
-    document.getElementById('next-question').addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % conversations.length;
-      update_dialog_demo();
-    });
-
-
-  </script>
 
 </body>
 

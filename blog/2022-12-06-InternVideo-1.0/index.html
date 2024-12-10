@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+        <title>InternVideo: General Video Foundation Models via Generative and Discriminative Learning</title>
+        <meta name="generator" content="Jekyll v3.9.4"/>
+        <meta property="og:title" content="InternVideo: General Video Foundation Models via Generative and Discriminative Learning"/>
+        <meta name="author" content="INTERNVideo Team/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:site_name" content="InternVideo"/>
+        <meta property="og:type" content="article"/>
+        <meta property="article:published_time" content="2024-01-30T12:33:38-06:00"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta property="twitter:title" content="InternVideo: General Video Foundation Models via Generative and Discriminative Learning"/>
+        <!-- End Jekyll SEO tag -->
+        <link rel="icon" href="https://github-production-user-asset-6210df.s3.amazonaws.com/47669167/330728723-7037290e-f474-4d11-b90f-1d8316087bf8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240529T072300Z&X-Amz-Expires=300&X-Amz-Signature=d12b9e5c3c49a082747f5da55529a4f1247cd17b4329fafc1cb6d1c0678efa77&X-Amz-SignedHeaders=host&actor_id=23737120&key_id=0&repo_id=721995615">
+        <link rel="stylesheet" href="/blog/assets/main.css">
+        <link type="application/atom+xml" rel="alternate" href="https://internvideo.github.io/blog/feed.xml" title="InternVideo"/>
+    </head>
+    <body>
+        <header class="site-header" role="banner">
+            <div class="wrapper">
+                <a class="site-title" rel="author" href="/">InternVideo</a>
+                <nav class="site-nav">
+                    <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+                    <label for="nav-trigger">
+                        <span class="menu-icon">
+                            <svg viewBox="0 0 18 15" width="18px" height="15px">
+                                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="trigger"></div>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <h1 class="post-title p-name" itemprop="name headline">InternVideo: General Video Foundation Models via Generative and Discriminative Learning</h1>
+                        <p class="post-meta">
+                            <time class="dt-published" datetime="2024-01-30T12:33:38-06:00" itemprop="datePublished">2022/12/06
+      </time>
+                            •
+                            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span class="p-author h-card" itemprop="name">Yi Wang, Kunchang Li, Yizhuo Li, Yinan He, Bingkun Huang, Zhiyu Zhao, Hongjie Zhang, Jilan Xu, Yi Liu, Zun Wang, Sen Xing, Guo Chen, Junting Pan, Jiashuo Yu, Yali Wang, Limin Wang, Yu Qiao</span>
+                            </span>
+                        </p>
+                    </header>
+                    <p><a rel="nofollow" href="https://arxiv.org/pdf/2212.03191">[📜 InternVideo 1.0 Paper]</a>  <a rel="nofollow" href="https://huggingface.co/OpenGVLab/InternVideo1.0/tree/main">[🤗 Models]</a>   <a rel="nofollow" href="https://github.com/OpenGVLab/InternVideo/tree/main/InternVideo1">[🔧 Github]</a> <a rel="nofollow" href="https://www.shlab.org.cn/news/5443279">[📖 Official news]</a></p>
+
+                     <style>
+                        @media (max-width: 768px) {
+                                img.responsive {
+                                width: 100% !important;
+                            }
+                        }
+                    </style>
+                    <div class="post-content e-content" itemprop="articleBody">
+
+                        <table>
+                        <thead>
+                        <tr>
+                        <th>Type</th>
+                        <th>Model</th>
+                        <th>Download</th>
+                        <th>Note</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                        <td rowspan="4">Foundation&nbsp;Model</td>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/InternVideo-MM-L-14.ckpt" rel="nofollow">HF link</a>               </td>
+                        <td>WebVid10M+Self-collected (14M)</td>
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAEv2-B</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideoMAE_models/resolve/main/mae-b/pytorch_model.bin" rel="nofollow">HF link</a></td>
+                        <td>UnlabeledHybrid (1M)</td>
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAEv2-L</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideoMAE_models/resolve/main/mae-l/pytorch_model.bin" rel="nofollow">HF link</a></td>
+                        <td>UnlabeledHybrid (1M)</td>
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAEv2-H</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideoMAE_models/resolve/main/mae-h/pytorch_model.bin" rel="nofollow">HF link</a></td>
+                        <td>UnlabeledHybrid (1M)</td>
+                        </tr>
+
+                        <tr>
+                        <td rowspan="9">Classification Model</td>
+                        <td>VideoMAEv2-B</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/internvideomae_classification/vit_b_hybrid_pt_800e_k400_ft.pth" rel="nofollow">HF link</a></td>
+                        <td>Use K400 Finetune</td>
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAEv2-B</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/blob/main/internvideomae_classification/vit_b_hybrid_pt_800e_k710_ft.pth" rel="nofollow">HF link</a></td>
+                        <td>Use K710 Finetune</td>
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAEv2-B</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/internvideomae_classification/vit_b_hybrid_pt_800e_ssv2_ft.pth" <rel="nofollow">HF link</a></td>
+                        <td>Use SSv2 Finetuning</td>
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAEv2-L</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/internvideomae_classification/vit_l_hybrid_pt_800e_k400_ft.pth" <rel="nofollow">HF link</a></td>
+                        <td>Use K400 Finetuning</td>
+                        
+                        </tr>
+                        <tr>
+                        <td>VideoMAEv2-L</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/internvideomae_classification/vit_l_hybrid_pt_800e_k700_ft.pth" <rel="nofollow">HF link</a></td>
+                        <td>Use K700 Finetuning</td>
+                        
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAE-L</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/internvideomae_classification/vit_l_hybrid_pt_800e_ssv2_ft.pth" <rel="nofollow">HF link</a></td>
+                        <td>Use SSv2 Finetuning</td>
+                        
+                        </tr>
+                        <tr>
+                        <td>VideoMAEv2-H</td>
+                        <td>🤗 <a href="TBD" rel="nofollow">ckpt</a></td>
+                        <td>Use K400 Finetuning</td>
+                        
+                        </tr>
+                        <tr>
+                        <td>VideoMAEv2-H</td>
+                        <td>🤗 <a href="TBD" rel="nofollow">ckpt</a></td>
+                        <td>Use SSv1 Finetuning</td>
+                        </tr>
+
+                        <tr>
+                        <td>VideoMAEv2-H</td>
+                        <td>🤗 <a href="TBD" rel="nofollow">ckpt_split1</a></td>
+                        <td>Use HMDB51 Finetuning</td>
+                        </tr>
+                        
+
+                        <!-- <tr> -->
+                        <td rowspan="6">Retrieval Model</td>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/activitynet/kc4_1e-3_2e-3_bs64_77words_64frame_dsl/pytorch_opt.bin" rel="nofollow">HF link</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/activitynet/kc4_1e-3_2e-3_bs64_77words_64frame_dsl/pytorch_opt.bin" rel="nofollow">LOG</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/activitynet/kc4_1e-3_2e-3_bs64_77words_64frame_dsl/pytorch_opt.bin" rel="nofollow">OPT</a> </td>
+                        <td>Use ActivityNet Finetune</td>
+                        <!-- </tr> -->
+
+                        <tr>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/didemo/pytorch_model.bin" rel="nofollow">HF link</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/didemo/log.txt" rel="nofollow">LOG</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/didemo/pytorch_opt.bin" rel="nofollow">OPT</a></td>
+                        <td>Use DiDeMo Finetune</td>
+                        </tr>
+
+                        
+                        <tr>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/lsmdc/pytorch_model.bin" rel="nofollow">HF link</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/lsmdc/log.txt" rel="nofollow">LOG</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/lsmdc/pytorch_opt.bin" rel="nofollow">OPT</a></td>
+                        <td>Use LSMDC Finetune</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/msrvtt/kc4_finetune_1e-32e-3_77words_12frames_128_16_bothdsl/pytorch_model.bin" rel="nofollow">HF link</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/msrvtt/kc4_finetune_1e-32e-3_77words_12frames_128_16_bothdsl/log.txt" rel="nofollow">LOG</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/msrvtt/kc4_finetune_1e-32e-3_77words_12frames_128_16_bothdsl/pytorch_opt.bin" rel="nofollow">OPT</a></td>
+                        <td>Use MSR-VTT Finetune</td>
+                        </tr>
+
+                        <tr>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/msvd/pytorch_model.bin" rel="nofollow">HF link</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/msvd/log.txt" rel="nofollow">LOG</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/msvd/pytorch_opt.bin" rel="nofollow">OPT</a></td>
+                        <td>Use MSVD Finetune</td>
+                        </tr>
+
+                        <tr>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/vatex/kc4_1e-35e-3_128_8frame/pytorch_model.bin" rel="nofollow">HF link</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/vatex/kc4_1e-35e-3_128_8frame/log.txt" rel="nofollow">LOG</a> 🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/retrieval/vatex/kc4_1e-35e-3_128_8frame/pytorch_opt.bin" rel="nofollow">OPT</a></td>
+                        <td>Use VATEX Finetune</td>
+                        </tr>
+                    
+                        <td rowspan="3">VideoQA Model</td>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/vqa/msrvtt.ckpt" rel="nofollow">HF link</a> </td>
+                        <td>Use MSRVTT Finetune</td>
+
+                        <tr>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/vqa/msvd.ckpt" rel="nofollow">HF link</a> </td>
+                        <td>Use MSVD Finetune</td>
+                        </tr>
+
+                        <tr>
+                        <td>InternVideo-MM-L-14</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/vqa/tgifqa.ckpt" rel="nofollow">HF link</a> </td>
+                        <td>Use TGIF-QA Finetune</td>
+                        </tr>
+                        
+                        <td rowspan="1">STAL Model</td>
+                        <td>VideoMAE-H</td>
+                        <td>🤗 <a href="https://huggingface.co/OpenGVLab/InternVideo1.0/resolve/main/stal/vit_h_hybrid_pt_k710_ft_ak_ft.pth" rel="nofollow">HF link</a> </td>
+                        <td>Use AVA-Kinetics Finetune</td>
+
+                        
+
+
+                        </tbody>
+                        </table>
+
+
+                        
+                        <h3 class="title">Citation</h3>
+<pre><code>
+    @article{wang2022internvideo,
+        title={InternVideo: General Video Foundation Models via Generative and Discriminative Learning},
+        author={Wang, Yi and Li, Kunchang and Li, Yizhuo and He, Yinan and Huang, Bingkun and Zhao, Zhiyu and Zhang, Hongjie and Xu, Jilan and Liu, Yi and Wang, Zun and Xing, Sen and Chen, Guo and Pan, Junting and Yu, Jiashuo and Wang, Yali and Wang, Limin and Qiao, Yu},
+        journal={arXiv preprint arXiv:2212.03191},
+        year={2022}
+      }
+  </code></pre>
+                        <br><h4 class="title"><a href="../">🔙 Go Back</a></h4>
+                    </div>
+
+                </article>
+            </div>
+        </main>
+        <footer class="site-footer h-card">
+            <p class="footer-colophon">
+            </p>
+        </footer>
+    </body>
+</html>
