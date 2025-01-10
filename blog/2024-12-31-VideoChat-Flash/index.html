@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="VideoChat-Flash">
+
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Vision-Language Model, Multi-modal LLM, Spatial-Temporal Understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>VideoChat-Flash</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-five-sixths">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <a href="https://scholar.google.com/citations?user=evR3uR0AAAAJ&hl" style="color:#008AD7;font-weight:normal;">Xinhao Li</a><sup style="color:#ed4b82;">2,</sup></sup><sup style="color:#6fbf73;">1,</sup><sup>*</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=Xm2M8UwAAAAJ" style="color:#008AD7;font-weight:normal;">Yi Wang</a><sup style="color:#6fbf73;">1,</sup></sup><sup style="color:#fd3be0;">☨</sup><sup>*</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=iH0Aq0YAAAAJ" style="color:#008AD7;font-weight:normal;">Jiashuo Yu</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+              <a style="color:#008AD7;font-weight:normal;">Xiangyu Zeng</a><sup style="color:#ed4b82;">2,</sup></sup><sup style="color:#6fbf73;">1,</sup>,</span>
+              <a style="color:#008AD7;font-weight:normal;">Yuhan Zhu</a><sup style="color:#ed4b82;">2</sup>,</span>
+              <br>
+              <a style="color:#008AD7;font-weight:normal;">Haian Huang</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a style="color:#008AD7;font-weight:normal;">Jianfei Gao</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=D4tLSbsAAAAJ" style="color:#008AD7;font-weight:normal;">Kunchang Li</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a href="https://dblp.org/pid/93/7763.html" style="color:#008AD7;font-weight:normal;">Yinan He</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a style="color:#008AD7;font-weight:normal;">Chenting Wang</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <br>
+              <a href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl" style="color:#008AD7;font-weight:normal;">Yu Qiao</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=hD948dkAAAAJ" style="color:#008AD7;font-weight:normal;">Yali Wang</a><sup style="color:#ffac33;">3</sup>,<sup style="color:#6fbf73;">1,</sup></span>
+              <a href="https://scholar.google.com/citations?user=p-h_BvcAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Limin Wang</a><sup style="color:#ed4b82;">2,</sup></sup><sup style="color:#6fbf73;">1</sup><sup style="color:#fd3be0;">☨</sup></span>
+            </div>
+
+            <br>
+
+            <div class="is-size-4 publication-authors">
+              <span class="author-block"><sup style="color:#6fbf73;">1</sup>OpenGVLab, Shanghai AI Laboratory</span>&nbsp;
+              <span class="author-block"><sup style="color:#ed4b82;">2</sup>Nanjing University</span>
+              <span class="author-block"><sup style="color:#ffac33;">3</sup>Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences</span>
+            </div>
+
+            <div class="is-size-9 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal contribution</span>&nbsp;
+              <span class="author-block"><sup style="color:#fd3be0;">☨</sup>Corresponding authors</span>
+            </div>
+
+            <br>
+
+                  <div class="content has-text-centered">
+                    <div class="publication-links">
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2501.00574" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a href="https://github.com/OpenGVLab/VideoChat-Flash" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a href="xx" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        🤗
+                      </span>
+                      <span>Models</span>
+                    </a>
+                  </span>
+                  </span>
+
+
+                  <span class="link-block">
+                    <a href="xx" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      🎨
+                    </span>
+                    <span>Demo</span>
+                    </a>
+                  </span>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="todotodotodo"
+        type="video/mp4">
+      </video>
+
+      <script>
+        // Wait until the page is loaded
+        window.onload = function() {
+          // Get the video element by its id
+          var video = document.getElementById("tree");
+
+          // Set the default playback speed (e.g., 1.5x speed)
+          video.playbackRate = 0.5;
+        };
+      </script>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Long-context modeling is a critical capability for multimodal large language models (MLLMs), enabling them to process long-form contents with implicit memorization. Despite its advances, handling extremely long videos remains challenging due to the difficulty in maintaining crucial features over extended sequences. This paper introduces a Hierarchical visual token Compression (HiCo) method designed for high-fidelity representation and a practical context modeling system VideoChat-Flash tailored for multimodal long-sequence processing. HiCo capitalizes on the redundancy of visual information in long videos to compress long video context from the clip-level to the video-level, reducing the compute significantly while preserving essential details. VideoChat-Flash features a multi-stage short-to-long learning scheme, a rich dataset of real-world long videos named LongVid, and an upgraded "Needle-In-A-video-Haystack" (NIAH) for evaluating context capacities. In extensive experiments, VideoChat-Flash shows the leading performance on both mainstream long and short video benchmarks at the 7B model scale. It firstly gets 99.1% accuracy over 10,000 frames in NIAH among open-source models.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- <section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Fine-grained understanding of short videos</h2> <br></div>
+  </div></section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+        <div class="container" style="margin-top: -60px;">
+          <div id="results-carousel" class="carousel results-carousel">
+
+            <div class="item">
+              <div style="text-align: center;">
+              <video width="70%" controls style="margin-bottom: 30px;">
+                <source src="https://github.com/InternVideo/InternVideo.github.io/blob/main/blog/2024-12-31-VideoChat-Flash/static/videos/sora_space.mp4" type="video/mp4">
+              </video>
+              </div>
+
+              <div class="answer-text" style="font-size: 16px; font-family: 'Arial'; margin-bottom: 20px; max-height: 100px; overflow-y: auto;">
+                <p><strong style="color: #ec9720;">User:</strong> What is the number on the astronaut's hat in the video?</p>
+                <p><strong style="color: #008AD7;">VideoChat-Flash:</strong> The number on the astronaut's hat is 33.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="text-align: center;">
+              <video width="70%" controls style="margin-bottom: 30px;">
+                <source src="https://github.com/InternVideo/InternVideo.github.io/blob/main/blog/2024-12-31-VideoChat-Flash/static/videos/car.mp4" type="video/mp4">
+              </video>
+              </div>
+
+              <div class="answer-text" style="font-size: 16px; font-family: 'Arial'; margin-bottom: 20px; max-height: 100px; overflow-y: auto;">
+                <p><strong style="color: #ec9720;">User:</strong> What's the possible number of the car in the video?</p>
+                <p><strong style="color: #008AD7;">VideoChat-Flash:</strong> The car in the video has the number 8 on its side.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  </div>
+</section> -->
+
+<!-- <section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Long Video Examples</h2> <br></div>
+  </div></section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+        <div class="container" style="margin-top: -60px;">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <div style="text-align: center;">
+              <video width="70%" controls style="margin-bottom: 20px;">
+                <source src="https://VideoChat-Flash.s3.amazonaws.com/assets/count_139.mp4#t=3" type="video/mp4">
+              </video>
+            </div>
+
+              <div class="answer-text" style="font-size: 16px; font-family: 'Arial'; margin-bottom: 20px; max-height: 100px; overflow-y: auto;">
+                <p><strong style="color: #ec9720;">User:</strong> In this video, how many times does the scene of the 'making jewelry' action appear in total?</p>
+                <p><strong style="color: #008AD7;">VideoChat-Flash:</strong> The scene of the 'making jewelry' action appears twice in the video.</p>
+                <p style="color: rgb(168, 71, 71);">(For your reference, the relevant section starts around 00:50 and 03:15)</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="text-align: center;">
+              <video width="70%" controls style="margin-bottom: 20px;">
+                <source src="https://VideoChat-Flash.s3.amazonaws.com/assets/ego_36.mp4#t=300" type="video/mp4">
+              </video>
+            </div>
+
+              <div class="answer-text" style="font-size: 16px; font-family: 'Arial'; margin-bottom: 20px; max-height: 100px; overflow-y: auto;">
+                <p><strong style="color: #ec9720;">User:</strong> Who did I interact with when I skated?</p>
+                <p><strong style="color: #008AD7;">VideoChat-Flash:</strong> During your skating, you interacted with a lady wearing a black dress.</p>
+                <p style="color: rgb(168, 71, 71);">(For your reference, the relevant section starts around 05:00)</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="text-align: center;">
+              <video width="70%" controls style="margin-bottom: 20px;">
+                <source src="https://VideoChat-Flash.s3.amazonaws.com/assets/needle_43.mp4#t=1" type="video/mp4">
+              </video>
+            </div>
+
+              <div class="answer-text" style="font-size: 16px; font-family: 'Arial'; margin-bottom: 20px; max-height: 100px; overflow-y: auto;">
+                <p><strong style="color: #ec9720;">User:</strong> What is the condition of the highway where the SUV is parked?</p>
+                <p><strong style="color: #008AD7;">VideoChat-Flash:</strong> The highway where the SUV is parked is empty and surrounded by trees.</p>
+                <p style="color: rgb(168, 71, 71);">(For your reference, the relevant section starts around 17:53)</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="text-align: center;">
+              <video width="70%" controls style="margin-bottom: 20px;">
+                <source src="https://VideoChat-Flash.s3.amazonaws.com/assets/needle_76.mp4#t=337" type="video/mp4">
+              </video>
+            </div>
+
+              <div class="answer-text" style="font-size: 16px; font-family: 'Arial'; margin-bottom: 20px; max-height: 100px; overflow-y: auto;">
+                <p><strong style="color: #ec9720;">User:</strong> What is the chef doing with the lobster in the dinner preparation?</p>
+                <p><strong style="color: #008AD7;">VideoChat-Flash:</strong> The chef is cutting the lobster in half.</p>
+                <p style="color: rgb(168, 71, 71);">(For your reference, the relevant section starts around 05:37)</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  </div>
+</section> -->
+<!-- End image carousel -->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">New Model: VideoChat-Flash</h2>
+        <div style="text-align: center;">
+        <b>🚀State-of-the-art performance</b> in short and long video understanding, with temporal localization capabilities comparable to expert models.
+          <br>
+          <img src="static/images/sota.png" width="100%"/>
+        </div>
+        <br>
+          <div style="text-align: center;">
+          <b>🔭Supports ultra-long video inputs</b>, achieving a groundbreaking needle-in-a-haystack evaluation accuracy of <b>99.1% on 10,000 frames</b>, capable of processing videos up to three hours long.
+          <br>
+          <img src="static/images/niah.png" width="100%"/>
+        </div>
+        <br>
+        <div style="text-align: center;"></div>
+          <b>⚡Highly efficient model architecture</b> with exceptional inference speed, encoding each video frame into just <b>16 tokens</b>, making it <b>5–10</b> times faster than the previous model.
+          <br>
+          <img src="static/images/model_framework.png" width="100%"/>
+        </div>
+        </h2>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper Qualitative -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">New Benchmarks: Multi-hop NIAH</h2>
+        <div class="myrow">
+          We propose a new benchmark, termed
+          multi-hop needle in a video haystack. It rigorously evaluates
+          the model’s ability to process extremely long contexts by
+          demanding it to locate a sequence of interconnected indi-
+          cating images embedded within a long video.
+          <br>
+          <img src="static/images/mhniah.png" width="80%"/>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citation</h2><pre><code>@article{li2024videochat,
+        title={VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling},
+        author={Li, Xinhao and Wang, Yi and Yu, Jiashuo and Zeng, Xiangyu and Zhu, Yuhan and Huang, Haian and Gao, Jianfei and Li, Kunchang and He, Yinan and Wang, Chenting and others},
+        journal={arXiv preprint arXiv:2501.00574},
+        year={2024}
+      }
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
